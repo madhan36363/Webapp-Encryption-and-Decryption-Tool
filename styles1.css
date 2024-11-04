@@ -1,0 +1,107 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Using Poppins font */
+    background-color: #f7f7f7; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    color: #333; /* Darker text color for better contrast */
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Max width for container */
+    padding: 20px;
+    background-color: white; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em; /* Main heading size */
+    color: #4a4a8a; /* Custom color for the heading */
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: #ffffff; /* Card background */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+}
+
+/* Subheading Styles */
+h2 {
+    color: #4a4a8a; /* Color for subheadings */
+    margin-bottom: 15px; /* Space below subheading */
+    font-size: 1.8em; /* Subheading size */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+    text-align: left; /* Align text to the left */
+}
+
+label {
+    display: block; /* Label as a block element */
+    font-weight: 600; /* Bold labels */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="file"] {
+    width: 100%; /* Full width for file input */
+    padding: 10px; /* Padding for input */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border */
+}
+
+/* Button Styles */
+input[type="submit"].btn {
+    background-color: #4a4a8a; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    padding: 12px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+input[type="submit"].btn:hover {
+    background-color: #3b3b6d; /* Darker shade on hover */
+}
+
+/* Link Styles */
+.download-link {
+    display: block; /* Block display for links */
+    margin-top: 10px; /* Space above links */
+    color: #4a4a8a; /* Color for links */
+    font-weight: bold; /* Bold text for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.download-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+}

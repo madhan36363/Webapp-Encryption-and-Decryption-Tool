@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption/Decryption Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Encryption/Decryption Tool</h1>
+        </header>
+
+        <div class="card">
+            <h2>Encrypt File</h2>
+            <form id="encrypt-form">
+                <div class="form-group">
+                    <label for="encrypt-file">Select file to encrypt:</label>
+                    <input type="file" id="encrypt-file" name="file" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Encrypt" class="btn">
+                </div>
+            </form>
+            <div id="encrypt-links">
+                <a id="encrypted-download" class="download-link" style="display:none;">Download Encrypted File</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Decrypt File</h2>
+            <form id="decrypt-form">
+                <div class="form-group">
+                    <label for="decrypt-file">Select encrypted file:</label>
+                    <input type="file" id="decrypt-file" name="file" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Decrypt" class="btn">
+                </div>
+            </form>
+            <div id="decrypt-links">
+                <a id="decrypted-download" class="download-link" style="display:none;">Download Decrypted File</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
